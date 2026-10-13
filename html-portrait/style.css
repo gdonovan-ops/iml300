@@ -1,27 +1,29 @@
 body {
   background-image: url("assets/sky.gif");
+    font-family: "Bitcount Ink", system-ui;
+display: contents
   background-size: cover;
   height: 100vh;
 }
 
 img {
-  height: 150px;
-  border-radius: 20px;
+  height: 120px;
+  border-radius: 90px;
   padding: 10px;
-  transition: 1s;
+  transition: s;
   filter: grayscale(100%);
   /*      border: 3px solid blue; */
 }
 
 img:hover {
-  height: 400px;
-  filter: grayscale(0%);
+  height: 800px;
+  filter: grayscale(70%);
   /*   border: 1px solid red; */
 }
 
 p:hover {
   /*   transform: rotate(5deg); */
-  letter-spacing: 1em;
+  letter-spacing: 40em;
 }
 
 .specialCenter {
@@ -35,18 +37,23 @@ a {
   animation: coolAnimation 3s infinite;
 }
 
+#quote{
+  color:#a52aa3;
+}
+
+
 #p1 {
   animation: coolAnimation 5s infinite;
 }
 
 @keyframes coolAnimation {
-  0% {
+  40% {
     color: red;
   }
-  50% {
+  90% {
     color: green;
   }
-  100% {
+  0% {
     color: blue;
   }
 }

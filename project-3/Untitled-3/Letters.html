@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Letters to Strangers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="index.html">The Dream Wall</a>
+  <a href="letters.html">Letters to Strangers</a>
+  <a href="about.html">Our Story</a>
+</nav>
+
+<header>
+  <h1>Letters to Strangers</h1>
+  <p>Some things are easier to say anonymously. Write it here and it shows up as a text messsage to the person.</p>
+</header>
+
+<main>
+  <h2>Write a letter to someone in LA.</h2>
+
+  <p>
+    
+    No names. Just words.
+  </p>
+
+  <form id="letter-form">
+    <select id="letter-to">
+      <option>To a stranger in LA</option>
+      <option>To someone chasing a dream</option>
+      <option>To someone feeling lost</option>
+      <option>To someone who just moved here</option>
+    </select>
+
+    <textarea id="letter-text" maxlength="500"
+      placeholder="Dear stranger..."
+      required></textarea>
+
+    <button type="submit">Leave My Letter</button>
+  </form>
+
+  <h2>Letters Left Behind</h2>
+  <p>Some letters never reached the person it was intended for. Click a letter to open it.</p>
+
+  <div id="letter-wall"></div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

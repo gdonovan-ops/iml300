@@ -1,53 +1,59 @@
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tiny5+Duo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="home.css">
-    <title>Grace's Homepage</title>
-    <!--Update with your name-->
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dear Los Angeles | Dream Wall</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <body>
-    <div>
-      <h1>Grace's Website</h1>
-      <!--Update with your name-->
-      <p>
-        This is my website for <i>IML300 class</i>. I love all things film and media
-      </p>
-    </div>
+<nav>
+  <a href="index.html">The Dream Wall</a>
+  <a href="letters.html">Letters to Strangers</a>
+  <a href="about.html">Our Story</a>
+</nav>
 
-    <div>
-      <h1>Presentation</h1>
-      <a href="">Pecha Kucha: Lorem Ipsum</a>
-    </div>
+<header>
+  <h1>Dear Los Angeles,</h1>
+  <p>Everyone moves to this city dreaming of something.</p>
+</header>
 
-    <div>
-      <h1>Projects</h1>
-      <h2>Project 1: Interactive Audio & Visual with p5.js</h2>
-      <a href="">Final: Lorem Ipsum</a>
-      <h2>Project 2: HyperNarrative</h2>
-      <a href="">Concept</a><br />
-      <a href="">Final: Lorem Ipsum</a>
-      <h2>Project 3: Networked Care</h2>
-      <a href="">Final: Lorem Ipsum</a>
-    </div>
+<main>
+  <h2>Here is a place to leave your dream on the wall.</h2>
 
-    <div>
-      <h1>Exercises</h1>
-      <ul>
-        <li><a href="">p5.js sketch 1</a></li>
-        <li><a href="">p5.js sketch 2</a></li>
-        <li><a href="">p5.js sketch 3</a></li>
-        <li><a href="">p5.js sketch 4</a></li>
-      </ul>
-    </div>
+  <p>
+    What brought you to LA? What do you hope
+    to become? Leave a little piece of
+    yourself here.
+  </p>
 
-    <!--add a h1 element called 'Thoughts' Below-->
-    <h1>Thoughts</h1>
+  <form id="note-form">
+    <textarea id="dream" maxlength="200"
+      placeholder="Dear LA, I hope to..."
+      required></textarea>
 
-    <footer>Fall, 2025.</footer>
-  </body>
+    <p>Choose your Post-it color:</p>
+
+    <select id="note-color">
+      <option value="yellow">Yellow</option>
+      <option value="pink">Pink</option>
+      <option value="blue">Blue</option>
+      <option value="green">Green</option>
+    </select>
+
+    <button type="submit">Post My Dream</button>
+  </form>
+
+  <h2>The Wall of Dreams</h2>
+  <p>Click on a note to bring it closer.</p>
+
+  <div id="dream-wall"></div>
+</main>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="script.js"></script>
+
+</body>
 </html>
